@@ -10,6 +10,9 @@ document.getElementById("zt").addEventListener("click", function() {
 document.getElementById('st').addEventListener('click', function() {
   window.location.href = "https://lejva.tprsmi.com/app/register.php?site_id=1058&topId=338101&selfPlanId=344542";
 });
+document.getElementById("xsd").addEventListener("click", function() {
+  window.location.href = "https://derear.fnbpsw.com/app/register.php?site_id=1059&topId=921151&selfPlanId=788616";
+});
 
 document.getElementById("0").innerHTML="🔥十年信誉平台推荐";
 
@@ -21,5 +24,8 @@ document.getElementById("6").innerHTML="征途国际";
 
 document.getElementById("11").innerHTML="胜天国际";
 
+document.getElementById("xsdn").innerHTML="新时代";
+
 document.getElementById("57").innerHTML="ttn9.cc";
+
 
