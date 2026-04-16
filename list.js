@@ -1,54 +1,61 @@
-var yhz = "aHR0cHM6Ly9nZnZneC5qZ3F2amkuY29tL2FwcC9yZWdpc3Rlci5waHA/c2l0ZV9pZD04MDAmcHQ9Rjg5QTk2NEYtOUUyRC05N0Q0LUQ2QTAtNDVFQzM1MzkyREZG";
-var ffz = "aHR0cHM6Ly9sbmNxYy5qZ3F2amkuY29tL2FwcC9yZWdpc3Rlci5waHA/c2l0ZV9pZD0xMDUwJnRvcElkPTc1NTE3NjM0ODMyNjY5MjYmc2VsZlBsYW5JZD0xNzQ1MjU=";
-var ztz = "aHR0cHM6Ly9wa2FqaW0uaGZqY2wuY29tL2FwcC9yZWdpc3Rlci5waHA/c2l0ZV9pZD0xMDMxJnB0PTY2RkIxOEQ3LUI1OEUtOUE0OC0wQjRDLTA3OUYwNkYyQjU1NQ==";
-var stz = "aHR0cHM6Ly9sZWp2YS50cHJzbWkuY29tL2FwcC9yZWdpc3Rlci5waHA/c2l0ZV9pZD0xMDU4JnRvcElkPTE4OTg0NjYmc2VsZlBsYW5JZD0xNTQ3MjY0";
-var xsdz = "aHR0cHM6Ly9kZXJlYXIuZm5icHN3LmNvbS9hcHAvcmVnaXN0ZXIucGhwP3NpdGVfaWQ9MTA1OSZ0b3BJZD05MjExNTEmc2VsZlBsYW5JZD03ODg2MTY=";
+(function() {
+    var secretApps = [
+{img: './png/ztgj.png', name: '征途国际', xurl: 'aHR0cHM6Ly9wa2FqaW0uaGZqY2wuY29tL2FwcC9yZWdpc3Rlci5waHA/c2l0ZV9pZD0xMDMxJnB0PTY2RkIxOEQ3LUI1OEUtOUE0OC0wQjRDLTA3OUYwNkYyQjU1NQ=='},
+{img: './png/jlgj.jpg', name: '君临国际', xurl: 'aHR0cHM6Ly90ZmFqbi5oY2p3ai5jb20vYXBwL3JlZ2lzdGVyLnBocD9zaXRlX2lkPTIwODEmdG9wSWQ9MTEwMTA2JnNlbGZQbGFuSWQ9NzgyMzEw'},
+{img: './png/yh.png', name: '壹号娱乐', xurl: 'aHR0cHM6Ly9nZnZneC5qZ3F2amkuY29tL2FwcC9yZWdpc3Rlci5waHA/c2l0ZV9pZD04MDAmcHQ9Rjg5QTk2NEYtOUUyRC05N0Q0LUQ2QTAtNDVFQzM1MzkyREZG'},
+{img: './png/stgj.jpg', name: '胜天国际', xurl: 'aHR0cHM6Ly9sZWp2YS50cHJzbWkuY29tL2FwcC9yZWdpc3Rlci5waHA/c2l0ZV9pZD0xMDU4JnRvcElkPTE4OTg0NjYmc2VsZlBsYW5JZD0xNTQ3MjY0'},
+{img: './png/ffyl.png', name: '非凡娱乐', xurl: 'aHR0cHM6Ly9sbmNxYy5qZ3F2amkuY29tL2FwcC9yZWdpc3Rlci5waHA/c2l0ZV9pZD0xMDUwJnRvcElkPTc1NTE3NjM0ODMyNjY5MjYmc2VsZlBsYW5JZD0xNzQ1MjU='},
+{img: './png/xsd.jpg', name: '新时代', xurl: 'aHR0cHM6Ly9kZXJlYXIuZm5icHN3LmNvbS9hcHAvcmVnaXN0ZXIucGhwP3NpdGVfaWQ9MTA1OSZ0b3BJZD05MjExNTEmc2VsZlBsYW5JZD03ODg2MTY='}
+    ];
 
-var yhx = atob(yhz);
-var ffx = atob(ffz);
-var ztx = atob(ztz);
-var stx = atob(stz);
-var xsdx = atob(xsdz);
+    var container = document.getElementById('xapes');
+    if (!container) return;
 
-document.getElementById("yh").addEventListener("click", function() {
-window.open(yhx, '_blank');
-});
-document.getElementById("ff").addEventListener("click", function() {
-window.open(ffx, '_blank');
-});
-document.getElementById("zt").addEventListener("click", function() {
-window.open(ztx, '_blank');
-});
-document.getElementById('st').addEventListener('click', function() {
-window.open(stx, '_blank');
-});
-document.getElementById("xsd").addEventListener("click", function() {
-window.open(xsdx, '_blank');
-});
-document.getElementById("jl").addEventListener("click", function() {
-window.open(atob("aHR0cHM6Ly90ZmFqbi5oY2p3ai5jb20vYXBwL3JlZ2lzdGVyLnBocD9zaXRlX2lkPTIwODEmdG9wSWQ9MTEwMTA2JnNlbGZQbGFuSWQ9NzgyMzEw"), '_blank');
-});
+    secretApps.forEach(function(app) {
+        // 1. 创建元素
+        var li = document.createElement('li');
+        li.className = 'app-item'; // 只保留类名用于样式
 
-;window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']("\x32")['\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c']="\ud83d\udd25\u5341\u5e74\u4fe1\u8a89\u5e73\u53f0\u63a8\u8350";window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']("\x79\x68\x6e")['\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c']="\u58f9\u53f7\u5a31\u4e50";window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']("\x66\x66\x6e")['\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c']="\u975e\u51e1\u5a31\u4e50";window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']("\x7a\x74\x6e")['\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c']="\u5f81\u9014\u56fd\u9645";window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']("\x73\x74\x6e")['\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c']="\u80dc\u5929\u56fd\u9645";window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']("\x78\x73\x64\x6e")['\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c']="\u65b0\u65f6\u4ee3";
+        li.innerHTML = `
+            <div class="app-icon"><img src="${app.img}"></div>
+            <div class="app-name">${app.name}</div>
+        `;
 
-document.getElementById("jln").innerHTML="君临国际";
-document.getElementById("1").innerHTML="TTN9.CC";
+        li.onclick = function() {
+            try {
+                // 解码并跳转
+                var targetUrl = atob(app.xurl.trim());
+                window.open(targetUrl, '_blank');
+            } catch (e) {
+                console.error("解码失败:", e);
+            }
+        };
 
-const texts = ["祝您新年快乐！", "马到成功", "TTN9.CC"];
-const today = new Date();
-const month = today.getMonth() + 1;
-const year = today.getFullYear();
-const date = today.getDate();
-let currentIndex = 0;
+        // 4. 塞进容器
+        container.appendChild(li);
+    });
+})();
 
-if (year === 2026 && month === 2 && date >= 17 && date <= 23) {
-    alert("🎇祝您新年快乐！🎇"); 
-setInterval(() => {
-document.getElementById("1").innerHTML = texts[currentIndex];
-currentIndex = (currentIndex + 1) % texts.length;
-}, 2026);
+window["document"]['getElementById']("3")['innerHTML'] = ("2026世界杯<br>点击查看赛程");
+window["document"]['getElementById']("2")['innerHTML'] = ("🔥十年信誉平台<br>⚽世界杯官方投注平台");
+window["document"]['getElementById']("1")['innerHTML'] = "TTN9.CC";
 
-} else if (year === 2026 && month === 3 && date === 3) {
-    alert("🎇祝您元宵节快乐！🎇");
+
+function showPopupOnce(popupId = 'sw_loaded') {
+  const key = `popup_${popupId}_shown`;
+  
+  if (localStorage.getItem(key)) {
+    return; 
+  }
+  alert('欢迎访问TTN9！');
+  localStorage.setItem(key, Date.now().toString());
 }
-
+window.addEventListener('load', function() {
+  showPopupOnce();
+});
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+    .then(function(registration) {
+      console.log('SW registered');
+    });
+}
